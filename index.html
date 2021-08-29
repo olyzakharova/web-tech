@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Copyright (c) Olya Zakharova-->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>test form</title>
+</head>
+<body>
+<form class="form">
+    <div class="form__main">
+        <h2 class="form__main-header">Выберите цвета</h2>
+        <div class="form__main-block">
+            <div class="form__main-block-head">
+                <ul class="form__main-block-head-list">
+                    <li class="form__main-block-head-list-el">Цвет</li>
+                    <li class="form__main-block-head-list-el"><input type="checkbox" name="addAll" id="addAll" checked><label for="addAll"></label></li>
+                    <li class="form__main-block-head-list-el">Оттенок</li>
+                    <li class="form__main-block-head-list-el">Объем</li>
+                    <li class="form__main-block-head-list-el">Упаковка</li>
+                    <li class="form__main-block-head-list-el">&#10008;</li>
+                </ul>
+            </div>
+            <div class="form__main-block-rows" id="blockRows">
+            </div>
+            <button class="form__add-color" id="addColor">Добавить оттенок</button>
+        </div>
+    </div>
+    <div class="form__sidebar">
+        <ul class="form__sidebar-list">
+            <li class="form__sidebar-list-el selected">Состав заказа</li>
+            <li class="form__sidebar-list-el">Комментарий</li>
+            <li class="form__sidebar-list-el">Контактное лицо</li>
+        </ul>
+        <button class="form-submit"  id="form-submit">Отправить</button>
+    </div>
+</form>
+
+<!-- <template id="row-container">
+    <div class="form__row">
+        <p class="form__row-color"></p>
+        <div class="form__row-color-block">
+            <p class="form__row-checkbox"><input type="checkbox" name="addShade" id="addShade" checked></p>
+            <p class="form__row-select"><select name="selectShade" id="selectShade">Выберите оттенок</select></p>
+            <p class="form__row-volume"><input type="number" id="volumeShade"> л</p>
+            <p class="form__row-pack">банка</p>
+            <p class="form__row-delete"><button>&#10008;</button></p>
+       </div>
+    </div>
+</template> -->
+
+<script type="text/javascript" src='./index.js'></script>
+</body>
+</html>
